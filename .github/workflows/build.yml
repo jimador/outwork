@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
+      - 'LICENSE'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+      - run: yarn install --frozen-lockfile
+      - run: yarn run lint
+      - run: yarn run build
+      - run: yarn run test
+        env:
+          CI: true
