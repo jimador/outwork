@@ -1,12 +1,64 @@
-# Typescript Node Boilerplate
+![](https://github.com/jimador/outwork/workflows/build/badge.svg)
 
-**Builds**:
+# Outwork
 
-- `Master` - ![Build Status - Master](https://github.com/jimador/outwork/workflows/build/badge.svg?branch=master)
+Fault tolerance tools for TypeScript
 
----
+> out·work
+>
+> /ˈoutˌwərk/
+>
+> a section of a fortification or system of defense which is in front of the main part.
 
-Contents:
+## Example Usage
+
+As a Decorator
+
+```ts
+class SomeClass {
+  @retry({
+    maxAttempts: 3,
+    backOff: 100,
+    backOffPolicy: BackOffPolicy.CONSTANT,
+    shouldRetry: (e: Error) => {
+      return e.message === 'Error: 429'
+    },
+  })
+  async someFnWithConstantRateRetries(): Promise<any> {
+    throw new Error('Error: 404')
+  }
+
+  @retry({
+    maxAttempts: 3,
+    backOffPolicy: BackOffPolicy.EXPONENTIAL,
+    maxDelay: 1000,
+    minDelay: 100,
+    jitter: true,
+  })
+  async someFnWithExponentialBackOffRetries(): Promise<any> {
+    return new Promise((_, reject) => {
+      reject(new Error('Broke'))
+    })
+  }
+}
+```
+
+As a HoF:
+
+```ts
+const myAsyncFunc = async (num: number, str: string): Promise<void> => {...}
+
+const myAsyncFuncWithRetries =
+  withRetry(myAsyncFunc, {
+    maxAttempts: 3,
+    backOffPolicy: BackOffPolicy.EXPONENTIAL,
+    maxDelay: 1000,
+    minDelay: 100,
+    jitter: true
+  })
+```
+
+Tools:
 
 - [TypeScript][typescript] [4.0][typescript-4-0]
 - [ESLint][eslint]
@@ -34,14 +86,6 @@ Contents:
 - `sort-pj` - sort `package.json`
 - `test` - run tests,
 - `test:watch` - interactive watch mode to automatically re-run tests
-
-# Enhancements
-
-Creating branches with different Typescript projects
-
-- ts-monorepo
-- ts-monorepo-serverless
-- others...
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-4-0]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-0.html
