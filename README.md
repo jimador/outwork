@@ -1,10 +1,12 @@
-# Typescript Node Boilerplate
+# Outwork
 
-**Builds**:
+![](https://github.com/jimador/outwork/workflows/build/badge.svg)
 
-- `Master` - ![Build Status - Master](https://github.com/jimador/outwork/workflows/build/badge.svg?branch=master)
-
----
+> out·work
+>
+> /ˈoutˌwərk/
+>
+> a section of a fortification or system of defense which is in front of the main part.
 
 Contents:
 
