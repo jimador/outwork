@@ -1,4 +1,4 @@
-const TEST_REGEX = '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$';
+const TEST_REGEX = '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$'
 
 module.exports = {
   collectCoverage: true,
@@ -19,4 +19,4 @@ module.exports = {
       },
     },
   },
-};
+}

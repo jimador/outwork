@@ -5,8 +5,8 @@
 
 # testing
 /coverage
-/test
 *.test.ts
+/test
 
 # output
 /task
