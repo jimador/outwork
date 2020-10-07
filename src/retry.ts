@@ -1,14 +1,12 @@
 import { BackOff, RetryConfiguration } from './backoff'
 import { RetryError } from './error'
 import { createLogger } from './logger'
+import { wait } from './utils'
 
 const logger = createLogger()
 
-export const wait = async (sleepTimeMs: number): Promise<number> =>
-  new Promise((resolve) => setTimeout(resolve, sleepTimeMs))
-
 // eslint-disable-next-line @typescript-eslint/ban-types
-export function retry(options: RetryConfiguration): Function {
+export function retry<T extends Function>(options: RetryConfiguration): Function {
   return function (_: Record<string, unknown>, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) {
     // eslint-disable-next-line @typescript-eslint/ban-types
     const wrappedFn: Function = descriptor.value
@@ -16,16 +14,16 @@ export function retry(options: RetryConfiguration): Function {
     descriptor.value = async function (this: any, ...args: any[]) {
       try {
         return await withRetry(wrappedFn.bind(this), options)(...args)
-      } catch (e: unknown) {
-        if (e instanceof RetryError) {
-          throw e
+      } catch (O_o: unknown) {
+        if (O_o instanceof RetryError) {
+          throw O_o
         }
 
-        if (e instanceof Error) {
-          throw RetryError.of(`Retry failed for property ${propertyKey} with message: ${e.message}`, e)
+        if (O_o instanceof Error) {
+          throw RetryError.of(`Retry failed for property ${propertyKey} with message: ${O_o.message}`, O_o)
         }
 
-        throw RetryError.of(`Retry failed for property ${propertyKey} : ${JSON.stringify(e)}`)
+        throw RetryError.of(`Retry failed for property ${propertyKey} : ${JSON.stringify(O_o)}`)
       }
     }
 
@@ -55,14 +53,15 @@ const abortDefault = (e: Error): boolean => !logAndRetry(e)
 type InferFunc<F extends (...args: any) => any> = (...args: Parameters<F>) => Promise<ReturnType<F>>
 
 /**
- * Curries a function to perform retry logic.
- * This can be used for both functions and methods.
+ * Executes a function to wrapped with retry logic.
  */
 export const withRetry = <F extends (...params: any[]) => any>(fn: F, options: RetryConfiguration): InferFunc<F> => {
   const shouldRetry = options.shouldRetry ?? logAndRetry
   const shouldStop = options.abortRetry ?? abortDefault
 
-  const curried = (attempt: BackOff): InferFunc<F> => async (...args: Parameters<F>): Promise<ReturnType<F>> => {
+  const executeWithBackOff = (attempt: BackOff): InferFunc<F> => async (
+    ...args: Parameters<F>
+  ): Promise<ReturnType<F>> => {
     try {
       const res = await fn(...args)
 
@@ -83,7 +82,7 @@ export const withRetry = <F extends (...params: any[]) => any>(fn: F, options: R
 
       await wait(attempt.getBackOff())
 
-      const next = curried(attempt.getNextAttempt())
+      const next = executeWithBackOff(attempt.getNextAttempt())
 
       return new Promise((resolve) => {
         process.nextTick(() => {
@@ -93,5 +92,5 @@ export const withRetry = <F extends (...params: any[]) => any>(fn: F, options: R
     }
   }
 
-  return curried(BackOff.from(options))
+  return executeWithBackOff(BackOff.from(options))
 }
