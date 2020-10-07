@@ -2,7 +2,7 @@
 
 **Builds**:
 
-- `Master` - ![Build Status - Master](https://github.com/jimador/typescript-node-boilerplate/workflows/build/badge.svg?branch=master)
+- `Master` - ![Build Status - Master](https://github.com/jimador/outwork/workflows/build/badge.svg?branch=master)
 
 ---
 

@@ -6,6 +6,10 @@ npm-debug.log*
 # dependencies
 /node_modules
 
+# generated
+/build
+/coverage
+
 # IDEs and editors
 /.idea
 .project
@@ -23,14 +27,9 @@ npm-debug.log*
 !.vscode/extensions.json
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
 npm-debug.log
 yarn-error.log
 testem.log
-/typings
 junit.xml
 
 # System Files

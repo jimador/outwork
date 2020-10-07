@@ -5,8 +5,7 @@ module.exports = {
     { value: 'docs', name: 'docs:  Documentation only changes' },
     {
       value: 'cleanup',
-      name:
-        'cleanup:   A code change that neither fixes a bug nor adds a feature',
+      name: 'cleanup:   A code change that neither fixes a bug nor adds a feature',
     },
     {
       value: 'chore',
@@ -38,17 +37,14 @@ module.exports = {
     type: "Select the type of change that you're committing:",
     scope: '\nDenote the SCOPE of this change (optional):',
     customScope: 'Denote the SCOPE of this change:',
-    subject:
-      'Write a SHORT, IMPERATIVE (lowercase) description of the change:\n',
-    body:
-      'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
+    subject: 'Write a SHORT, IMPERATIVE (lowercase) description of the change:\n',
+    body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
     breaking: 'List any BREAKING CHANGES (optional):\n',
-    footer:
-      'List any ISSUES CLOSED by this change (optional). E.g.: #12345, #54321:\n',
+    footer: 'List any ISSUES CLOSED by this change (optional). E.g.: #12345, #54321:\n',
     confirmCommit: 'Are you sure you want to proceed with the commit above?',
   },
   allowCustomScopes: false,
   allowBreakingChanges: ['feat', 'fix'],
   skipQuestions: ['ticketNumber'],
   subjectLimit: 100,
-};
+}

@@ -1,7 +1,7 @@
 {
-  "name": "typescript-node-boilerplate",
-  "version": "0.0.0",
-  "description": "Typescript template project",
+  "name": "outwork",
+  "version": "0.1.0",
+  "description": "Fault tolerance patterns for TypeScript",
   "license": "MIT",
   "author": "James Dunnam",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint-staged",
+      "pre-commit": "lint-staged",
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-push": "yarn checkcommit && pretty-quick --check"
     }
@@ -38,6 +38,10 @@
       "path": "./node_modules/cz-customizable"
     }
   },
+  "dependencies": {
+    "verror": "^1.10.0",
+    "winston": "^3.3.3"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "~26.0.10",
@@ -49,8 +53,13 @@
     "cz-conventional-changelog": "^3.0.2",
     "cz-customizable": "^6.2.0",
     "eslint": "~7.9.0",
-    "eslint-config-prettier": "~6.11.0",
-    "eslint-plugin-jest": "~24.0.2",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-tsdoc": "^0.2.7",
+    "eslint-plugin-unused-imports": "^0.1.3",
     "husky": "^4.2.5",
     "jest": "~26.4.2",
     "jest-junit": "^11.1.0",
