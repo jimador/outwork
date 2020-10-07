@@ -14,6 +14,7 @@
     "clean-logs": "rimraf *.log",
     "commit": "git-cz",
     "format": "./scripts/format.sh && yarn run sort-pj",
+    "postinstall": "yarn format",
     "lint": "scripts/check-format.sh",
     "nuke": "run-s clean clean-deps",
     "sort-pj": "npx sort-package-json",
