@@ -7,7 +7,7 @@ type BaseBackOffConfiguration = {
 
 export interface ConstantBackOffConfiguration extends BaseBackOffConfiguration {
   backOffPolicy: 'CONSTANT'
-  backOff?: number
+  backOff: number
 }
 
 export interface ExponentialBackoffConfiguration extends BaseBackOffConfiguration {
@@ -97,7 +97,6 @@ class ExponentialBackOff extends FixedBackOff {
   minDelay: number
   multiplier: number
   jitter: boolean
-  backOff: number
 
   constructor(
     { maxAttempts, minDelay, maxDelay, multiplier = 1, jitter = true }: ExponentialBackoffOptions,

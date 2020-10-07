@@ -5,7 +5,7 @@ import VError from 'verror'
  */
 export class RetryError extends VError {
   constructor(message = 'Retry Error', cause?: Error) {
-    super(cause, message)
+    super({ name: RetryError.name, cause }, message)
     Error.captureStackTrace(this, this.constructor)
   }
 

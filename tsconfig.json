@@ -14,8 +14,9 @@
     "types": ["node", "jest"],
     "lib": ["esnext"],
     "declaration": true,
+    "strict": true,
     "paths": {}
   },
   "include": ["src/**/*"],
-  "exclude": ["**/node_modules"]
+  "exclude": ["**/node_modules", "**/*/*.test.ts"]
 }
