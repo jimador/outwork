@@ -9,6 +9,7 @@ npm-debug.log*
 # generated
 /build
 /coverage
+/lib
 
 # IDEs and editors
 /.idea

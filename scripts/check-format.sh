@@ -13,6 +13,7 @@ find . -type f \
   ! -path "*/node_modules/*" \
   ! -path "*/coverage/*" \
   ! -path "*/build/*" \
+  ! -path "./lib/*/*.js" \
   ! -path "*/.*/*" \
   -exec file "{}" ";" | grep CRLF
 SCRIPTS_STATUS=$?
