@@ -6,7 +6,7 @@ import { wait } from './utils'
 const logger = createLogger()
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-export function retry<T extends Function>(options: RetryConfiguration): Function {
+export function retry(options: RetryConfiguration): Function {
   return function (_: Record<string, unknown>, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) {
     // eslint-disable-next-line @typescript-eslint/ban-types
     const wrappedFn: Function = descriptor.value
