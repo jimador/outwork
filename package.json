@@ -21,7 +21,6 @@
     "clean-logs": "rimraf *.log",
     "commit": "git-cz",
     "format": "yarn run clean && ./scripts/format.sh && yarn run sort-pj",
-    "postinstall": "yarn format",
     "lint": "scripts/check-format.sh",
     "nuke": "run-s clean clean-deps",
     "prepublishOnly": "yarn build:release",
