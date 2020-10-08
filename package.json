@@ -12,6 +12,7 @@
   "scripts": {
     "prebuild": "yarn clean-generated",
     "build": "tsc -p tsconfig.build.json",
+    "prebuild:release": "yarn clean",
     "build:release": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "build:watch": "tsc -w -p tsconfig.build.json",
     "checkcommit": "node ./scripts/commit-lint.js",
