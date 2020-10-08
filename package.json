@@ -1,6 +1,6 @@
 {
   "name": "outwork",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fault tolerance patterns for TypeScript",
   "license": "MIT",
   "author": "James Dunnam",
@@ -12,6 +12,7 @@
   "scripts": {
     "prebuild": "yarn clean-generated",
     "build": "tsc -p tsconfig.build.json",
+    "prebuild:release": "yarn clean",
     "build:release": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "build:watch": "tsc -w -p tsconfig.build.json",
     "checkcommit": "node ./scripts/commit-lint.js",
@@ -21,7 +22,6 @@
     "clean-logs": "rimraf *.log",
     "commit": "git-cz",
     "format": "yarn run clean && ./scripts/format.sh && yarn run sort-pj",
-    "postinstall": "yarn format",
     "lint": "scripts/check-format.sh",
     "nuke": "run-s clean clean-deps",
     "prepublishOnly": "yarn build:release",
