@@ -530,20 +530,20 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@microsoft/tsdoc-config@0.13.6":
-  version "0.13.6"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.6.tgz#2154785e264edaa515ce5bb2a6c9cd7865f356cf"
-  integrity sha512-VJjV35PnrNISoX2WMemZjnCIdOUPTRpCz6pu8inISotLd3SgoDSJygGaE7+lOYdCtDl+4c8PWJdZivxxXgOnLw==
+"@microsoft/tsdoc-config@0.13.9":
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.13.9.tgz#d8c8e8ab79ca11dc14838090c463905ae4c1a22d"
+  integrity sha512-VqqZn+rT9f6XujFPFR2aN9XKF/fuir/IzKVzoxI0vXIzxysp4ee6S2jCakmlGFHEasibifFTsJr7IYmRPxfzYw==
   dependencies:
-    "@microsoft/tsdoc" "0.12.21"
-    ajv "~6.12.3"
+    "@microsoft/tsdoc" "0.12.24"
+    ajv "~6.12.6"
     jju "~1.4.0"
-    resolve "~1.12.0"
+    resolve "~1.19.0"
 
-"@microsoft/tsdoc@0.12.21":
-  version "0.12.21"
-  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.21.tgz#1098c393634826ed47386862a1241ce8b7c0cf0d"
-  integrity sha512-j+9OJ0A0buZZaUn6NxeHUVpoa05tY2PgVs7kXJhJQiKRB0G1zQqbJxer3T7jWtzpqQWP89OBDluyIeyTsMk8Sg==
+"@microsoft/tsdoc@0.12.24":
+  version "0.12.24"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.24.tgz#30728e34ebc90351dd3aff4e18d038eed2c3e098"
+  integrity sha512-Mfmij13RUTmHEMi9vRUhMXD7rnGR2VvxeNYtaGtaJ4redwwjT4UXYJ+nzmVJF7hhd4pn/Fx5sncDKxMVFJSWPg==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -869,7 +869,7 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@~6.12.3:
+ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
   version "6.12.5"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
   integrity sha512-lRF8RORchjpKG50/WFf8xmg7sgCLFiYNNnqdKflk63whMQcWR5ngGjiSXkL9bjxy6B2npOK2HSMN49jEBMSkag==
@@ -887,6 +887,16 @@ ajv@^7.0.2:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
+ajv@~6.12.6:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
 ansi-align@^2.0.0:
@@ -2288,12 +2298,12 @@ eslint-plugin-prettier@^3.1.4:
     prettier-linter-helpers "^1.0.0"
 
 eslint-plugin-tsdoc@^0.2.7:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.7.tgz#19a4203b2856cd6bae58e4a3dfe6c543de41988f"
-  integrity sha512-GAbNpwNfwnolagP6mCQT8wY4usifnAE/iuCz15L3BcEca0xAidctU61h7w40mOuNiSp78DYPUl5gwN89nJ8+8Q==
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.2.10.tgz#d8ace43fb95bd8e8beab8b13510ca67ed2f7ad4a"
+  integrity sha512-LDK6K0tQ7tIyVzyktwX7P9V/aZZOMSIGYRnDP3x6+obITkVyrCrkc5yUhBiUjTc/S9gEy5GpjwD02wgcMPBFbA==
   dependencies:
-    "@microsoft/tsdoc" "0.12.21"
-    "@microsoft/tsdoc-config" "0.13.6"
+    "@microsoft/tsdoc" "0.12.24"
+    "@microsoft/tsdoc-config" "0.13.9"
 
 eslint-plugin-unused-imports@^0.1.3:
   version "0.1.3"
@@ -3453,6 +3463,13 @@ is-core-module@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.1.0.tgz#a4cc031d9b1aca63eecbd18a650e13cb4eeab946"
   integrity sha512-YcV7BgVMRFRua2FqQzKtTDMz8iCuLEyGKjr70q8Zm1yy2qKcurbFEd79PAdHV77oL3NrAaOVQIbMmiHQCHB7ZA==
+  dependencies:
+    has "^1.0.3"
+
+is-core-module@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.2.0.tgz#97037ef3d52224d85163f5597b2b63d9afed981a"
+  integrity sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
   dependencies:
     has "^1.0.3"
 
@@ -5771,11 +5788,12 @@ resolve@^1.18.1:
     is-core-module "^2.0.0"
     path-parse "^1.0.6"
 
-resolve@~1.12.0:
-  version "1.12.3"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.3.tgz#96d5253df8005ce19795c14338f2a013c38a8c15"
-  integrity sha512-hF6+hAPlxjqHWrw4p1rF3Wztbgxd4AjA5VlUzY5zcTb4J8D3JK4/1RjU48pHz2PJWzGVsLB1VWZkvJzhK2CCOA==
+resolve@~1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.19.0.tgz#1af5bf630409734a067cae29318aac7fa29a267c"
+  integrity sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==
   dependencies:
+    is-core-module "^2.1.0"
     path-parse "^1.0.6"
 
 restore-cursor@^2.0.0:
