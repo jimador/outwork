@@ -75,7 +75,7 @@
     "jest-junit": "^12.0.0",
     "lint-staged": "^10.2.11",
     "npm-run-all": "^4.1.5",
-    "prettier": "~2.1.2",
+    "prettier": "~2.2.1",
     "pretty-quick": "^3.0.2",
     "rimraf": "~3.0.2",
     "satisfied": "^1.1.2",
