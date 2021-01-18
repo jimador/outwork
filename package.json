@@ -62,7 +62,7 @@
     "conventional-changelog-cli": "^2.0.23",
     "cz-conventional-changelog": "^3.0.2",
     "cz-customizable": "^6.2.0",
-    "eslint": "~7.17.0",
+    "eslint": "~7.18.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-import": "^2.22.0",
