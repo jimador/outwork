@@ -64,7 +64,7 @@
     "cz-customizable": "^6.2.0",
     "eslint": "~7.20.0",
     "eslint-config-defaults": "^9.0.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-prettier": "^3.1.4",
