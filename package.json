@@ -52,7 +52,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-conventional": "^13.1.0",
     "@types/jest": "~26.0.10",
     "@types/node": "~16.3",
     "@types/verror": "^1.10.4",
