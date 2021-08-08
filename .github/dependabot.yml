@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: sunday
+    time: "23:00"
+    timezone: US/Eastern
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - automerge
+  ignore:
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.18.0
+    - 4.21.0
+  - dependency-name: "@commitlint/config-conventional"
+    versions:
+    - 12.0.1
