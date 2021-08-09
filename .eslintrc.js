@@ -4,11 +4,7 @@ module.exports = {
     'jest/globals': true,
   },
   plugins: ['@typescript-eslint', 'jest', 'import', 'unused-imports', 'eslint-plugin-tsdoc'],
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:jest/recommended',
-    'prettier',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:jest/recommended', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',

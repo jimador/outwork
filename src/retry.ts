@@ -59,38 +59,38 @@ export const withRetry = <F extends (...params: any[]) => any>(fn: F, options: R
   const shouldRetry = options.shouldRetry ?? logAndRetry
   const shouldStop = options.abortRetry ?? abortDefault
 
-  const executeWithBackOff = (attempt: BackOff): InferFunc<F> => async (
-    ...args: Parameters<F>
-  ): Promise<ReturnType<F>> => {
-    try {
-      const res = await fn(...args)
+  const executeWithBackOff =
+    (attempt: BackOff): InferFunc<F> =>
+    async (...args: Parameters<F>): Promise<ReturnType<F>> => {
+      try {
+        const res = await fn(...args)
 
-      return res
-    } catch (e) {
-      if (shouldStop(e)) {
-        throw RetryError.of(`Retry halted due to policy with: ${e.message}`, e)
-      } else {
-        const { currentAttempt, maxAttempts } = attempt
+        return res
+      } catch (e) {
+        if (shouldStop(e)) {
+          throw RetryError.of(`Retry halted due to policy with: ${e.message}`, e)
+        } else {
+          const { currentAttempt, maxAttempts } = attempt
 
-        if (currentAttempt >= maxAttempts + 1) {
-          logger.error(e.message, e)
-          throw RetryError.of(`Retry failed after ${maxAttempts} attempts.`, e)
-        } else if (!shouldRetry(e)) {
-          throw e
+          if (currentAttempt >= maxAttempts + 1) {
+            logger.error(e.message, e)
+            throw RetryError.of(`Retry failed after ${maxAttempts} attempts.`, e)
+          } else if (!shouldRetry(e)) {
+            throw e
+          }
         }
-      }
 
-      await wait(attempt.getBackOff())
+        await wait(attempt.getBackOff())
 
-      const next = executeWithBackOff(attempt.getNextAttempt())
+        const next = executeWithBackOff(attempt.getNextAttempt())
 
-      return new Promise((resolve) => {
-        process.nextTick(() => {
-          resolve(next(...args))
+        return new Promise((resolve) => {
+          process.nextTick(() => {
+            resolve(next(...args))
+          })
         })
-      })
+      }
     }
-  }
 
   return executeWithBackOff(BackOff.from(options))
 }
