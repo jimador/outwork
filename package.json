@@ -1,6 +1,6 @@
 {
   "name": "outwork",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Fault tolerance patterns for TypeScript",
   "license": "MIT",
   "author": "James Dunnam",
