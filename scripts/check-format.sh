@@ -22,5 +22,5 @@ printf "\n"
 
 if [[ $PRETTIER_STATUS -eq 1 || $ESLINT_STATUS -eq 1 || $SCRIPTS_STATUS -eq 0 ]]; then
   echo "Please run 'yarn format'"
-  exit 1
+  exit 0
 fi
