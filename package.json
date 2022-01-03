@@ -81,7 +81,7 @@
     "rimraf": "~3.0.2",
     "satisfied": "^1.1.2",
     "sort-package-json": "^1.44.0",
-    "syncpack": "^5.6.10",
+    "syncpack": "^6.0.0",
     "ts-jest": "~26.5.0",
     "tsutils": "~3.21.0",
     "typescript": "~4.5.2"
