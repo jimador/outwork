@@ -6981,9 +6981,9 @@ symbol-tree@^3.2.4:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 syncpack@^10.0.0:
-  version "10.7.2"
-  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-10.7.2.tgz#9b61a62ef176787248779509f4d5b84818464a49"
-  integrity sha512-G0UEcmmEthrSfos9QCmfdqOD8ptW1QrCx027UhOQSHQPV1vtMSvm1zbRFS7ek1Y52egdhTIiRx6Vo2svvpYeCA==
+  version "10.7.3"
+  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-10.7.3.tgz#5d4dd4da6bbc0b502df99a0faaa094f524921d05"
+  integrity sha512-nhsiOHR1zebKRn4eZn5zUjbSJm4D8GgqiraY45MsaOClPbhVJny/jWhWrjSOuwwupdwv8EYH+GA9sqCEn4DCnA==
   dependencies:
     "@effect/data" "0.12.9"
     "@effect/io" "0.27.0"
