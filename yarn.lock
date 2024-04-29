@@ -7076,9 +7076,9 @@ symbol-tree@^3.2.4:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 syncpack@^12.0.0:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-12.3.1.tgz#1fd5aec9d3b23d726b04fdd78616eade0d451442"
-  integrity sha512-6UUvguBI7jdh34XuYVStBE6cLwqX6xYZI6fxRDJs7GiNirTGkugu2oXWq9VlAvpnnR1QhWM7dPU9anXW0ki4qQ==
+  version "12.3.2"
+  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-12.3.2.tgz#e7edca14d2539bba71d28843d839222cb96c4344"
+  integrity sha512-ePvaDfasxF8mwaPItN6urmABaH6FPT3/vJU+2DHt24j8EIKjgz6NCxXDx2bTXJXZ4QcEFwvoiu3EqaJsVrHvUg==
   dependencies:
     "@effect/schema" "0.66.5"
     chalk "5.3.0"
