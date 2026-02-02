@@ -307,12 +307,12 @@
   integrity sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==
 
 "@commitlint/config-conventional@^20.0.0":
-  version "20.3.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-20.3.1.tgz#0060d47c2f79dd7063ac1d28951ec460889fe672"
-  integrity sha512-NCzwvxepstBZbmVXsvg49s+shCxlJDJPWxXqONVcAtJH9wWrOlkMQw/zyl+dJmt8lyVopt5mwQ3mR5M2N2rUWg==
+  version "20.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-20.4.0.tgz#6522e0059e1ad6169b756c2ed0e42b21dab729b1"
+  integrity sha512-nolhFe2YKIix0D4+tPXAWnnIc9WB5fOCgmm4h2EcRyEShC64oH/DpM9n++85NRdItvIhKb+Szsaeuug7KcEeIA==
   dependencies:
-    "@commitlint/types" "^20.3.1"
-    conventional-changelog-conventionalcommits "^7.0.2"
+    "@commitlint/types" "^20.4.0"
+    conventional-changelog-conventionalcommits "^9.1.0"
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"
@@ -347,13 +347,13 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-11.0.0.tgz#719cf05fcc1abb6533610a2e0f5dd1e61eac14fe"
   integrity sha512-VoNqai1vR5anRF5Tuh/+SWDFk7xi7oMwHrHrbm1BprYXjB2RJsWLhUrStMssDxEl5lW/z3EUdg8RvH/IUBccSQ==
 
-"@commitlint/types@^20.3.1":
-  version "20.3.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-20.3.1.tgz#084cf4cb142826d7a0eab378f838514e3e75f048"
-  integrity sha512-VmIFV/JkBRhDRRv7N5B7zEUkNZIx9Mp+8Pe65erz0rKycXLsi8Epcw0XJ+btSeRXgTzE7DyOyA9bkJ9mn/yqVQ==
+"@commitlint/types@^20.4.0":
+  version "20.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-20.4.0.tgz#f8a1cf83b17db4f7de56940880873bca7480be59"
+  integrity sha512-aO5l99BQJ0X34ft8b0h7QFkQlqxC6e7ZPVmBKz13xM9O8obDaM1Cld4sQlJDXXU/VFuUzQ30mVtHjVz74TuStw==
   dependencies:
-    "@types/conventional-commits-parser" "^5.0.0"
-    chalk "^5.3.0"
+    conventional-commits-parser "^6.2.1"
+    picocolors "^1.1.1"
 
 "@conventional-changelog/git-client@^1.0.0":
   version "1.0.0"
@@ -722,13 +722,6 @@
   integrity sha512-Pzh9O3sTK8V6I1olsXpCfj2k/ygO2q1X0vhhnDrEQyYLHZesWz+zMZMVcwXLCYf0U36EtmyYaFGPfXlTtDHe3A==
   dependencies:
     "@babel/types" "^7.3.0"
-
-"@types/conventional-commits-parser@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@types/conventional-commits-parser/-/conventional-commits-parser-5.0.0.tgz#8c9d23e0b415b24b91626d07017303755d542dc8"
-  integrity sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==
-  dependencies:
-    "@types/node" "*"
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.3"
@@ -1987,17 +1980,17 @@ conventional-changelog-codemirror@^5.0.0:
   resolved "https://registry.yarnpkg.com/conventional-changelog-codemirror/-/conventional-changelog-codemirror-5.0.0.tgz#994ced326cf358c5e549f5ac59bf3f8cdc09f783"
   integrity sha512-8gsBDI5Y3vrKUCxN6Ue8xr6occZ5nsDEc4C7jO/EovFGozx8uttCAyfhRrvoUAWi2WMm3OmYs+0mPJU7kQdYWQ==
 
-conventional-changelog-conventionalcommits@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-7.0.2.tgz#aa5da0f1b2543094889e8cf7616ebe1a8f5c70d5"
-  integrity sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==
-  dependencies:
-    compare-func "^2.0.0"
-
 conventional-changelog-conventionalcommits@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-8.0.0.tgz#3fa2857c878701e7f0329db5a1257cb218f166fe"
   integrity sha512-eOvlTO6OcySPyyyk8pKz2dP4jjElYunj9hn9/s0OB+gapTO8zwS9UQWrZ1pmF2hFs3vw1xhonOLGcGjy/zgsuA==
+  dependencies:
+    compare-func "^2.0.0"
+
+conventional-changelog-conventionalcommits@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-9.1.0.tgz#34e5f35c80c1375a5464df2a8067a1facbb2d858"
+  integrity sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==
   dependencies:
     compare-func "^2.0.0"
 
@@ -2091,6 +2084,13 @@ conventional-commits-parser@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-6.0.0.tgz#74e3be5344d8cd99f7c3353da2efa1d1dd618061"
   integrity sha512-TbsINLp48XeMXR8EvGjTnKGsZqBemisPoyWESlpRyR8lif0lcwzqz+NMtYSj1ooF/WYjSuu7wX0CtdeeMEQAmA==
+  dependencies:
+    meow "^13.0.0"
+
+conventional-commits-parser@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-6.2.1.tgz#855e53c4792b1feaf93649eff5d75e0dbc2c63ad"
+  integrity sha512-20pyHgnO40rvfI0NGF/xiEoFMkXDtkF8FwHvk5BokoFoCuTQRI8vrNCNFWUOfuolKJMm1tPCHc8GgYEtr1XRNA==
   dependencies:
     meow "^13.0.0"
 
