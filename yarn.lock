@@ -7585,59 +7585,59 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-syncpack-darwin-arm64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-darwin-arm64/-/syncpack-darwin-arm64-14.3.1.tgz#cda730c6bedfed2354176cb13841b1c8b427b0c6"
-  integrity sha512-WtHbqXCEDSRzdqTIroYqYSMW/0yQ8dYvpucQ6SKsbVE86K5wjFd37TOIDFM5NLudCYASJpy4FXv7G/HxHAyRLw==
+syncpack-darwin-arm64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-darwin-arm64/-/syncpack-darwin-arm64-15.1.2.tgz#5e5dcfdc9f4d9cdede365a01ba632677ff896ca1"
+  integrity sha512-RQET2RNmX7yKorqCE6Q7kppC7eT9lw742QYPfWIL8Nh26RerT+erOp8zhdgv/3OmDkETF9olqyts79HY48V4SA==
 
-syncpack-darwin-x64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-darwin-x64/-/syncpack-darwin-x64-14.3.1.tgz#c0d0b490d06a601318a3af4c323b4d5c7d9eba34"
-  integrity sha512-K+Zx1TN67vllDLrouc6YISOhhWm7RxrRE7087ea36T85WNq4JvI+M3UBJoxRjaJ+0v3wBA2YmBzEHzJg8skAww==
+syncpack-darwin-x64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-darwin-x64/-/syncpack-darwin-x64-15.1.2.tgz#86ebd2118d99ae9e93ee4c955833e6bdcdb188e8"
+  integrity sha512-pmVr4Qw5o42aUfeZVaPXmnQNaoMhBNywcFK24FqSlo3MCK3WCJ0UwfhmcD7u82BGwASd4RFPGxgV18iJLFRnoA==
 
-syncpack-linux-arm64-musl@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-linux-arm64-musl/-/syncpack-linux-arm64-musl-14.3.1.tgz#c301b6b38eba3d4829d7073400119652fe9cfdb8"
-  integrity sha512-gZTLgIS0irmZx2HjZqco9YsbYe6sz/5Lce/yKmTBdCaHCpurb+TZA97nu5FxXSAA0HKs3Nzi8CDjNzv+yAQUXw==
+syncpack-linux-arm64-musl@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-linux-arm64-musl/-/syncpack-linux-arm64-musl-15.1.2.tgz#18aa07790bbb9002e1e4cf5a21493c884c0bdcf4"
+  integrity sha512-Xs1wOUrMZqu0yo85NjAiccbBVkDYhT2P8yOh2+R56MK7ywtyBuM3TxR2IwEmXE8NPW3++hzdF0a7a7IbiW74bQ==
 
-syncpack-linux-arm64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-linux-arm64/-/syncpack-linux-arm64-14.3.1.tgz#9707eb929a34c61fe77d25b7afbcdd4f564812b4"
-  integrity sha512-+5fXNoKz2ZqQszplZGp6J9ZKL6JW1hr3BMjEkklYz+jufX9rH/MWY0hcRCfHJSuvcTUrsYo/koqU/UnBiANjGg==
+syncpack-linux-arm64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-linux-arm64/-/syncpack-linux-arm64-15.1.2.tgz#d05d8be8bc430667a6129ab22c22aaba4752238c"
+  integrity sha512-iRsv6tPNX9ZaDEjjpFdYwJj6EHerMVzl2euWt6qmYaW8/SaR6s5W+cc+qXPXijPsBlK65gibdHBfsBgJYB//CA==
 
-syncpack-linux-x64-musl@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-linux-x64-musl/-/syncpack-linux-x64-musl-14.3.1.tgz#c4ef74035dbe9044ec4a83c53d40552fc8e3a50b"
-  integrity sha512-NK+1Qm762bbXDYqAz2+++NlJ9jONX+3Hrulp4XpytFEIGABiy8wIzouBpxZkppf30+1mxt4o8LMtZ8P54/ObNA==
+syncpack-linux-x64-musl@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-linux-x64-musl/-/syncpack-linux-x64-musl-15.1.2.tgz#b24e8742ee6aaacec7b589a9120f2ca7f075218a"
+  integrity sha512-bBtQUTEECd1nefHWfQskwkFdaVXn54whSLHacc9bQijqn4p8lZ2JR3vokqVx8w/dKSrJsxkEM4K7zfHOori38w==
 
-syncpack-linux-x64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-linux-x64/-/syncpack-linux-x64-14.3.1.tgz#92b1b8792dacc2a31e03b1776f37bfcdb33ac282"
-  integrity sha512-v1Y4D0oB2uIx+Npy1eD384adOSKvrjtu3VodjcQ/2aK4rTjVZl3k4eOA5py4I4Qdt6+zC6n+t5KrGuiaiBlbWQ==
+syncpack-linux-x64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-linux-x64/-/syncpack-linux-x64-15.1.2.tgz#aff9de0d7ce2a919607f98301656f1f489b1bb1a"
+  integrity sha512-Vwc7HLu05rUTgoN2zwcM/F/KiSw7/1prb/S4P+P5UtLXHfQ3Y23dvW1el6ABg7pOBbk08Zgr3i4DSS7Wiw0rog==
 
-syncpack-windows-arm64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-windows-arm64/-/syncpack-windows-arm64-14.3.1.tgz#f0609d3449e55e3036cf49d76a0ab24c343f810a"
-  integrity sha512-xf+i8B5dDc3AIG8ZFF215gLQF0PKXQC6I8skmEfGy36oFh3VTAJKBjgEg6P8R3FC9/kRzkWFcDZmNLkbKN6YmA==
+syncpack-windows-arm64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-windows-arm64/-/syncpack-windows-arm64-15.1.2.tgz#67db7190ce92eeb0bd118eae4621cc9c78ca7b66"
+  integrity sha512-WZnjy0zM9TNWCKxNVo6PGprBKusYykqiAj2qGYWgkMMtGECpFOfEsrmt3R4s58ttQMAg44N+HVDhXtIFQeJOpg==
 
-syncpack-windows-x64@14.3.1:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack-windows-x64/-/syncpack-windows-x64-14.3.1.tgz#ebcf53b802ad119e0b50a8f5f96615c6a9bb8eb0"
-  integrity sha512-gjbWwc05RcekcrLHOi5gq0JKvhoIMNqbUnAvPZLu46/+HrYuuJiUqruoj6y/GbCuvoQ880E820GF1pQFW9xNXA==
+syncpack-windows-x64@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack-windows-x64/-/syncpack-windows-x64-15.1.2.tgz#fa44f8e485457e462ce1a7dda271bc28cc121806"
+  integrity sha512-xyWsvn2Bbvubt4sIZGguqbv8pXiGWKifIYgzZWWUIWdaNvGThNLlrEWBlHABDx+Ov1yKLiKHjBiXQMgplMN92w==
 
-syncpack@^14.0.0:
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-14.3.1.tgz#6926b8583a99533893f5f10cf99eb4d81ba89be8"
-  integrity sha512-TCqOY6Z7TH5yHV3saI6sHb5XRsZ8m2DaI4FQMonKT7UoCKL2WBiI54PLEFDSv1F2sL1BZA5e1opprf190ohirg==
+syncpack@^15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/syncpack/-/syncpack-15.1.2.tgz#c9cb737e8913f8a49c203367893d96600224eb6a"
+  integrity sha512-LDDT44/Skk5r6cDsbemGPD1t8p40iBqWz0Kkj5Khmx/e4blaXSA+nckYepHgb9xLY8Be+xuS0gVWHsYjKZufIw==
   optionalDependencies:
-    syncpack-darwin-arm64 "14.3.1"
-    syncpack-darwin-x64 "14.3.1"
-    syncpack-linux-arm64 "14.3.1"
-    syncpack-linux-arm64-musl "14.3.1"
-    syncpack-linux-x64 "14.3.1"
-    syncpack-linux-x64-musl "14.3.1"
-    syncpack-windows-arm64 "14.3.1"
-    syncpack-windows-x64 "14.3.1"
+    syncpack-darwin-arm64 "15.1.2"
+    syncpack-darwin-x64 "15.1.2"
+    syncpack-linux-arm64 "15.1.2"
+    syncpack-linux-arm64-musl "15.1.2"
+    syncpack-linux-x64 "15.1.2"
+    syncpack-linux-x64-musl "15.1.2"
+    syncpack-windows-arm64 "15.1.2"
+    syncpack-windows-x64 "15.1.2"
 
 table@^6.0.9:
   version "6.7.1"
