@@ -307,12 +307,12 @@
   integrity sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==
 
 "@commitlint/config-conventional@^21.0.0":
-  version "21.1.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-21.1.0.tgz#e97ab3e2cab26771277f09ac76bfb4fbeb65c1d8"
-  integrity sha512-BIFl8xM+3SLy3jrblUC3wmQLCVbLty+++6o859BDCmybVrQdXmIWO+dlkGIbv/M2bBoC55wGuh0zGiw3TPjL1g==
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-21.2.0.tgz#9ce2b1f5a24e94883ed1e4c5530fb1b8c1d531eb"
+  integrity sha512-Qf8WRDVcyVd14if6VTWenebxFbKnVnbzPUJjlzjkyJGeHK2xCGd63Dr1XZzj0plXKQb9P0BfOxoc1HVeCo2BWQ==
   dependencies:
-    "@commitlint/types" "^21.1.0"
-    conventional-changelog-conventionalcommits "^9.2.0"
+    "@commitlint/types" "^21.2.0"
+    conventional-changelog-conventionalcommits "^10.0.0"
 
 "@commitlint/execute-rule@^11.0.0":
   version "11.0.0"
@@ -347,12 +347,12 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-11.0.0.tgz#719cf05fcc1abb6533610a2e0f5dd1e61eac14fe"
   integrity sha512-VoNqai1vR5anRF5Tuh/+SWDFk7xi7oMwHrHrbm1BprYXjB2RJsWLhUrStMssDxEl5lW/z3EUdg8RvH/IUBccSQ==
 
-"@commitlint/types@^21.1.0":
-  version "21.1.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-21.1.0.tgz#174651d9d728f79603b4248a7c54a285761a21fe"
-  integrity sha512-YodnnnH1Cp+08nP8HGNJAIuB6L3/vdCTHVRTfF8Ik/wRCLOTsU9zwv3yO1cSPQRDa9CLYtE+UJ2K67r7CwMSFw==
+"@commitlint/types@^21.2.0":
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-21.2.0.tgz#da93897b416f788323f639cce6045310aeb03096"
+  integrity sha512-7zVFCDB2reMvJH5dmbKnOQPjZEvjdJTH8jc0U/PIPU1r3/+vf5pD1HlfitV2MWsWXrvu7u39iY1lyLUPOaN0Gw==
   dependencies:
-    conventional-commits-parser "^6.3.0"
+    conventional-commits-parser "^7.0.0"
     picocolors "^1.1.1"
 
 "@conventional-changelog/git-client@^1.0.0":
@@ -362,6 +362,11 @@
   dependencies:
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
+
+"@conventional-changelog/template@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.2.1.tgz#8f673635d6ec8289bc5d5a1264629fd1e88b8d4f"
+  integrity sha512-TzlTVpKPjaqW6qOYjQcYUDuGsLCNsvFHVBXkYGTAnf5V37jCWrE5haKNXzz0WZUtVHjrpV76L1buANjwXMfT8w==
 
 "@dabh/diagnostics@^2.0.8":
   version "2.0.8"
@@ -659,10 +664,10 @@
   resolved "https://registry.yarnpkg.com/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
   integrity sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==
 
-"@simple-libs/stream-utils@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@simple-libs/stream-utils/-/stream-utils-1.2.0.tgz#5af724b826f1ab4d7f2826d31d3efccec124102b"
-  integrity sha512-KxXvfapcixpz6rVEB6HPjOUZT22yN6v0vI0urQSk1L8MlEWPDFCZkhw2xmkyoTGYeFw7tWTZd7e3lVzRZRN/EA==
+"@simple-libs/stream-utils@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@simple-libs/stream-utils/-/stream-utils-2.0.0.tgz#758d2a0876b4d672dac1eae212cdbab452670d3c"
+  integrity sha512-fCTuZK4QBa+39Oz9l4OGfJfz+GpwCp3AqO7Zch3to99xHPgstVsRFpeQ8LNd2o1Gv8raL2mCFwiaHh7bFSp5DQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
@@ -1960,17 +1965,17 @@ conventional-changelog-codemirror@^5.0.0:
   resolved "https://registry.yarnpkg.com/conventional-changelog-codemirror/-/conventional-changelog-codemirror-5.0.0.tgz#994ced326cf358c5e549f5ac59bf3f8cdc09f783"
   integrity sha512-8gsBDI5Y3vrKUCxN6Ue8xr6occZ5nsDEc4C7jO/EovFGozx8uttCAyfhRrvoUAWi2WMm3OmYs+0mPJU7kQdYWQ==
 
+conventional-changelog-conventionalcommits@^10.0.0:
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-10.2.1.tgz#dfa7cd9b3c6762bc65b2e7c97636097a3b426217"
+  integrity sha512-n4Kr1HFMTf3iMbES0TMxKIcYtUUv4rKqyQQp2JwfOEfFCOfGT3Tq4mCyJ8S9/YPyWhydjfKrrvnyl+gCjA+mJQ==
+  dependencies:
+    "@conventional-changelog/template" "^1.2.1"
+
 conventional-changelog-conventionalcommits@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-8.0.0.tgz#3fa2857c878701e7f0329db5a1257cb218f166fe"
   integrity sha512-eOvlTO6OcySPyyyk8pKz2dP4jjElYunj9hn9/s0OB+gapTO8zwS9UQWrZ1pmF2hFs3vw1xhonOLGcGjy/zgsuA==
-  dependencies:
-    compare-func "^2.0.0"
-
-conventional-changelog-conventionalcommits@^9.2.0:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-9.3.0.tgz#763e66613f49c13567f6319987e9f45ae41eda24"
-  integrity sha512-kYFx6gAyjSIMwNtASkI3ZE99U1fuVDJr0yTYgVy+I2QG46zNZfl2her+0+eoviG82c5WQvW1jMt1eOQTeJLodA==
   dependencies:
     compare-func "^2.0.0"
 
@@ -2067,13 +2072,13 @@ conventional-commits-parser@^6.0.0:
   dependencies:
     meow "^13.0.0"
 
-conventional-commits-parser@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-6.3.0.tgz#fc170753ca66f31940a438539bf48e4406ac54b5"
-  integrity sha512-RfOq/Cqy9xV9bOA8N+ZH6DlrDR+5S3Mi0B5kACEjESpE+AviIpAptx9a9cFpWCCvgRtWT+0BbUw+e1BZfts9jg==
+conventional-commits-parser@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.0.1.tgz#ba288dd43d13cba1e96d94728873eba787de542c"
+  integrity sha512-6VtskFpPsNkGVk/TY2RnV/MEdKfvCPBtQZN9x8jh9+k5RWBQ+tiaWn5UFCzTr0Dd88iKx7xghxbjBRp5uIzp3g==
   dependencies:
-    "@simple-libs/stream-utils" "^1.2.0"
-    meow "^13.0.0"
+    "@simple-libs/stream-utils" "^2.0.0"
+    meow "^14.0.0"
 
 convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   version "1.7.0"
@@ -5635,6 +5640,11 @@ meow@^13.0.0:
   version "13.2.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-13.2.0.tgz#6b7d63f913f984063b3cc261b6e8800c4cd3474f"
   integrity sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==
+
+meow@^14.0.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-14.1.0.tgz#3cd2d16ad534829ab12fcb5010fc2fdb89facd31"
+  integrity sha512-EDYo6VlmtnumlcBCbh1gLJ//9jvM/ndXHfVXIFrZVr6fGcwTUyCTFNTLCKuY3ffbK8L/+3Mzqnd58RojiZqHVw==
 
 merge-stream@^2.0.0:
   version "2.0.0"
